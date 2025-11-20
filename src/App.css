@@ -1,12 +1,76 @@
 .App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-bottom: 0.5rem;
 }
 
-p {
+.subtitle {
   font-size: 1.2em;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.categories {
+  margin: 3rem 0;
+}
+
+.categories h2 {
+  font-size: 2em;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.category-card {
+  padding: 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.category-card:hover {
+  border-color: #667eea;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.category-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3em;
+  color: #333;
+}
+
+.category-card p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.storybook-link {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.storybook-link p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 600;
 }
