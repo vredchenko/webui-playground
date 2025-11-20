@@ -8,6 +8,18 @@ const preview: Preview = {
        date: /Date$/i,
       },
     },
+    a11y: {
+      // Automatically run accessibility tests on all stories
+      config: {
+        rules: [
+          {
+            // Enable color contrast checking
+            id: 'color-contrast',
+            enabled: true,
+          },
+        ],
+      },
+    },
   },
 };
 
