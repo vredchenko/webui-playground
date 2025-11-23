@@ -25,12 +25,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const allTextures = [
-  { path: '/textures/wood.jpg', name: 'Wood', objectType: 'sphere' as const },
-  { path: '/textures/brick.jpg', name: 'Brick', objectType: 'box' as const },
-  { path: '/textures/metal.jpg', name: 'Metal', objectType: 'torus' as const },
-  { path: '/textures/fabric.jpg', name: 'Fabric', objectType: 'cylinder' as const },
-  { path: '/textures/marble.jpg', name: 'Marble', objectType: 'sphere' as const },
-  { path: '/textures/concrete.jpg', name: 'Concrete', objectType: 'box' as const },
+  { path: 'textures/wood.jpg', name: 'Wood', objectType: 'sphere' as const },
+  { path: 'textures/brick.jpg', name: 'Brick', objectType: 'box' as const },
+  { path: 'textures/metal.jpg', name: 'Metal', objectType: 'torus' as const },
+  { path: 'textures/fabric.jpg', name: 'Fabric', objectType: 'cylinder' as const },
+  { path: 'textures/marble.jpg', name: 'Marble', objectType: 'sphere' as const },
+  { path: 'textures/concrete.jpg', name: 'Concrete', objectType: 'box' as const },
 ];
 
 export const ThreeColumns: Story = {
@@ -72,12 +72,12 @@ export const SpheresOnly: Story = {
 export const MixedShapes: Story = {
   args: {
     textures: [
-      { path: '/textures/wood.jpg', name: 'Wood Sphere', objectType: 'sphere' as const },
-      { path: '/textures/wood.jpg', name: 'Wood Box', objectType: 'box' as const },
-      { path: '/textures/wood.jpg', name: 'Wood Torus', objectType: 'torus' as const },
-      { path: '/textures/metal.jpg', name: 'Metal Sphere', objectType: 'sphere' as const },
-      { path: '/textures/metal.jpg', name: 'Metal Cylinder', objectType: 'cylinder' as const },
-      { path: '/textures/metal.jpg', name: 'Metal Plane', objectType: 'plane' as const },
+      { path: 'textures/wood.jpg', name: 'Wood Sphere', objectType: 'sphere' as const },
+      { path: 'textures/wood.jpg', name: 'Wood Box', objectType: 'box' as const },
+      { path: 'textures/wood.jpg', name: 'Wood Torus', objectType: 'torus' as const },
+      { path: 'textures/metal.jpg', name: 'Metal Sphere', objectType: 'sphere' as const },
+      { path: 'textures/metal.jpg', name: 'Metal Cylinder', objectType: 'cylinder' as const },
+      { path: 'textures/metal.jpg', name: 'Metal Plane', objectType: 'plane' as const },
     ],
     columns: 3,
     rotate: true,
