@@ -26,7 +26,9 @@ interface SceneProps {
 
 function TexturedMesh({ texturePath, objectType, rotate }: SceneProps) {
   const meshRef = useRef<THREE.Mesh>(null);
-  const texture = useTexture(texturePath);
+  // Prepend base URL for proper asset resolution in production
+  const fullPath = import.meta.env.BASE_URL + texturePath;
+  const texture = useTexture(fullPath);
 
   // Enable texture wrapping and set repeat for better tiling
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
