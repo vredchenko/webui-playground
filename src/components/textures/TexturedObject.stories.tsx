@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 
 export const WoodSphere: Story = {
   args: {
-    texturePath: '/textures/wood.jpg',
+    texturePath: 'textures/wood.jpg',
     objectType: 'sphere',
     label: 'Wood Texture',
     rotate: true,
@@ -34,7 +34,7 @@ export const WoodSphere: Story = {
 
 export const BrickBox: Story = {
   args: {
-    texturePath: '/textures/brick.jpg',
+    texturePath: 'textures/brick.jpg',
     objectType: 'box',
     label: 'Brick Texture',
     rotate: true,
@@ -44,7 +44,7 @@ export const BrickBox: Story = {
 
 export const MetalTorus: Story = {
   args: {
-    texturePath: '/textures/metal.jpg',
+    texturePath: 'textures/metal.jpg',
     objectType: 'torus',
     label: 'Metal Texture',
     rotate: true,
@@ -54,7 +54,7 @@ export const MetalTorus: Story = {
 
 export const FabricCylinder: Story = {
   args: {
-    texturePath: '/textures/fabric.jpg',
+    texturePath: 'textures/fabric.jpg',
     objectType: 'cylinder',
     label: 'Fabric Texture',
     rotate: true,
@@ -64,7 +64,7 @@ export const FabricCylinder: Story = {
 
 export const MarblePlane: Story = {
   args: {
-    texturePath: '/textures/marble.jpg',
+    texturePath: 'textures/marble.jpg',
     objectType: 'plane',
     label: 'Marble Texture',
     rotate: false,
@@ -74,7 +74,7 @@ export const MarblePlane: Story = {
 
 export const ConcreteSphere: Story = {
   args: {
-    texturePath: '/textures/concrete.jpg',
+    texturePath: 'textures/concrete.jpg',
     objectType: 'sphere',
     label: 'Concrete Texture',
     rotate: true,
@@ -84,7 +84,7 @@ export const ConcreteSphere: Story = {
 
 export const Interactive: Story = {
   args: {
-    texturePath: '/textures/wood.jpg',
+    texturePath: 'textures/wood.jpg',
     objectType: 'sphere',
     label: 'Interactive - Use mouse to rotate',
     rotate: false,
