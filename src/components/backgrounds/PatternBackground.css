@@ -1,0 +1,41 @@
+.pattern-background {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.pattern-background__preview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: repeat;
+}
+
+.pattern-background__info {
+  padding: 1rem;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.pattern-background__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.pattern-background__source {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.pattern-background__source a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.pattern-background__source a:hover {
+  text-decoration: underline;
+}
