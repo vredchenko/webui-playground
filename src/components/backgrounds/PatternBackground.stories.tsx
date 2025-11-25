@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { PatternBackground } from './PatternBackground';
 
 const meta = {
-  title: 'Backgrounds/Patterns',
+  title: 'Backgrounds',
   component: PatternBackground,
   parameters: {
     layout: 'padded',
