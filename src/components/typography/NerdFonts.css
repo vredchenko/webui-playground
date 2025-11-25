@@ -1,0 +1,213 @@
+.nerd-fonts {
+  padding: 2rem;
+  max-width: 1000px;
+}
+
+.nerd-fonts__header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #333;
+}
+
+.nerd-fonts__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.nerd-fonts__description {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.nerd-fonts__section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nerd-fonts__section:last-child {
+  border-bottom: none;
+}
+
+.nerd-fonts__section--note {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-bottom: none;
+}
+
+.nerd-fonts__section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.nerd-fonts__set-description {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0 0 1rem 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Icon Grid */
+.nerd-fonts__icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.nerd-fonts__icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.nerd-fonts__icon-item:hover {
+  background: #e8e8e8;
+}
+
+.nerd-fonts__icon-char {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.nerd-fonts__icon-name {
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Glyph Range */
+.nerd-fonts__range {
+  margin-bottom: 1.5rem;
+}
+
+.nerd-fonts__range:last-child {
+  margin-bottom: 0;
+}
+
+.nerd-fonts__range-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nerd-fonts__range-code {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #888;
+  font-family: ui-monospace, monospace;
+}
+
+.nerd-fonts__glyphs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+
+.nerd-fonts__glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.25rem;
+  border-radius: 4px;
+  cursor: default;
+  transition: background 0.15s;
+}
+
+.nerd-fonts__glyph:hover {
+  background: #e0e0e0;
+}
+
+.nerd-fonts__more {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  font-size: 0.875rem;
+  color: #888;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Powerline Demo */
+.nerd-fonts__powerline-demo {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.nerd-fonts__pl-segment {
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.nerd-fonts__pl-segment--blue {
+  background: #5c7cfa;
+}
+
+.nerd-fonts__pl-segment--green {
+  background: #40c057;
+}
+
+.nerd-fonts__pl-segment--purple {
+  background: #9775fa;
+}
+
+.nerd-fonts__pl-arrow {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.nerd-fonts__pl-arrow--blue-green {
+  color: #5c7cfa;
+  background: #40c057;
+}
+
+.nerd-fonts__pl-arrow--green-purple {
+  color: #40c057;
+  background: #9775fa;
+}
+
+.nerd-fonts__pl-arrow--purple {
+  color: #9775fa;
+  background: transparent;
+}
+
+/* Note */
+.nerd-fonts__note-text {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.nerd-fonts__note-text a {
+  color: #5c7cfa;
+  text-decoration: none;
+}
+
+.nerd-fonts__note-text a:hover {
+  text-decoration: underline;
+}

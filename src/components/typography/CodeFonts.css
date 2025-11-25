@@ -1,0 +1,281 @@
+.code-fonts {
+  padding: 2rem;
+  max-width: 1000px;
+}
+
+.code-fonts__header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #333;
+}
+
+.code-fonts__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+}
+
+.code-fonts__description {
+  font-size: 1.125rem;
+  color: #555;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-fonts__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.code-fonts__creator {
+  font-size: 0.875rem;
+  color: #666;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-fonts__badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #5c7cfa;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-fonts__link {
+  font-size: 0.875rem;
+  color: #5c7cfa;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-fonts__link:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.code-fonts__section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.code-fonts__section:last-child {
+  border-bottom: none;
+}
+
+.code-fonts__section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-fonts__info {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Code Block */
+.code-fonts__code {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.code-fonts__code code {
+  font-family: inherit;
+}
+
+/* Ligatures */
+.code-fonts__ligatures {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.code-fonts__ligatures-row {
+  padding: 1.5rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.code-fonts__ligatures-row--enabled {
+  background: #e7f5ff;
+  border: 2px solid #5c7cfa;
+}
+
+.code-fonts__ligatures-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #555;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-fonts__ligatures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.75rem;
+}
+
+.code-fonts__ligature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.code-fonts__ligature-code {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.code-fonts__ligature-desc {
+  font-size: 0.65rem;
+  color: #888;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Distinguishable Characters */
+.code-fonts__distinctions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.code-fonts__distinction {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+
+.code-fonts__distinction-chars {
+  font-size: 1.5rem;
+  font-weight: 500;
+  min-width: 140px;
+  letter-spacing: 0.15em;
+}
+
+.code-fonts__distinction-desc {
+  font-size: 0.8rem;
+  color: #666;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Character Set */
+.code-fonts__charset {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.code-fonts__charset-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.code-fonts__charset-row:last-child {
+  margin-bottom: 0;
+}
+
+.code-fonts__charset-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-fonts__charset-chars {
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  word-break: break-all;
+}
+
+/* Font Weights */
+.code-fonts__weights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.code-fonts__weight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+
+.code-fonts__weight-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  min-width: 40px;
+  color: #888;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-fonts__weight-sample {
+  font-size: 1rem;
+}
+
+/* Styles */
+.code-fonts__styles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.code-fonts__style {
+  background: #f8f8f8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.code-fonts__style-label {
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  background: #e8e8e8;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-fonts__style-code {
+  margin: 0;
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  background: transparent;
+}
