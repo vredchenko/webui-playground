@@ -1,6 +1,28 @@
 .type-scale {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 900px;
+}
+
+.type-scale__section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.type-scale__section:last-child {
+  border-bottom: none;
+}
+
+.type-scale__section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #333;
+  display: inline-block;
 }
 
 .type-scale__h1 {
@@ -56,6 +78,51 @@
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 1rem 0;
   color: #666;
+}
+
+/* Font Variants */
+.type-scale__variant {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
+.type-scale__variant-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin: 0 0 0.5rem 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.type-scale__variant .type-scale__body {
+  margin: 0;
+}
+
+/* Code Block */
+.type-scale__code {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.type-scale__code code {
+  font-family: inherit;
+}
+
+/* Character Set */
+.type-scale__charset {
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  line-height: 2;
 }

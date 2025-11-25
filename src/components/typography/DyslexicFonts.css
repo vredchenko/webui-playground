@@ -1,0 +1,216 @@
+.dyslexic-fonts {
+  padding: 2rem;
+  max-width: 900px;
+}
+
+.dyslexic-fonts__header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #333;
+}
+
+.dyslexic-fonts__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+}
+
+.dyslexic-fonts__description {
+  font-size: 1.125rem;
+  color: #555;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+.dyslexic-fonts__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dyslexic-fonts__badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #40c057;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dyslexic-fonts__link {
+  font-size: 0.875rem;
+  color: #5c7cfa;
+  text-decoration: none;
+}
+
+.dyslexic-fonts__link:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.dyslexic-fonts__section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dyslexic-fonts__section:last-child {
+  border-bottom: none;
+}
+
+.dyslexic-fonts__section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.dyslexic-fonts__info {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+}
+
+/* Sample Text */
+.dyslexic-fonts__sample {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.dyslexic-fonts__text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+}
+
+.dyslexic-fonts__text:last-child {
+  margin-bottom: 0;
+}
+
+.dyslexic-fonts__text--large {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.dyslexic-fonts__text--small {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Confusable Characters */
+.dyslexic-fonts__confusables {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.dyslexic-fonts__confusable {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+
+.dyslexic-fonts__confusable-chars {
+  font-size: 2rem;
+  font-weight: 500;
+  min-width: 100px;
+  letter-spacing: 0.1em;
+}
+
+.dyslexic-fonts__confusable-desc {
+  font-size: 0.8rem;
+  color: #666;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Character Set */
+.dyslexic-fonts__charset {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.dyslexic-fonts__charset-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.dyslexic-fonts__charset-row:last-child {
+  margin-bottom: 0;
+}
+
+.dyslexic-fonts__charset-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.dyslexic-fonts__charset-chars {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  word-break: break-all;
+}
+
+/* Comparison */
+.dyslexic-fonts__comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.dyslexic-fonts__comparison-item {
+  padding: 1.5rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.dyslexic-fonts__comparison-item--highlight {
+  background: #e7f5ff;
+  border: 2px solid #5c7cfa;
+}
+
+.dyslexic-fonts__comparison-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #555;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.dyslexic-fonts__comparison-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Features List */
+.dyslexic-fonts__features {
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  line-height: 1.8;
+}
+
+.dyslexic-fonts__features li {
+  margin-bottom: 0.75rem;
+}
+
+.dyslexic-fonts__features li:last-child {
+  margin-bottom: 0;
+}
+
+.dyslexic-fonts__features strong {
+  color: #333;
+}
