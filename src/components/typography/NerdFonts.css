@@ -1,3 +1,16 @@
+/* Import NerdFonts from CDN for web rendering */
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/firacode-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/jetbrainsmono-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/hack-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/caskaydiacove-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/meslo-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/saucecodepro-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/iosevka-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/inconsolata-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/ubuntumono-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/robotomono-nerd-font.css');
+@import url('https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@latest/build/victormono-nerd-font.css');
+
 .nerd-fonts {
   padding: 2rem;
   max-width: 1000px;
