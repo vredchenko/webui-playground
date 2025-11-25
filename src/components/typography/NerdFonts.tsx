@@ -125,7 +125,7 @@ const popularIcons = [
  * Displays NerdFont glyphs and icon sets
  */
 export const NerdFonts: React.FC<NerdFontsProps> = ({
-  fontFamily = '"JetBrainsMono Nerd Font", "FiraCode Nerd Font", monospace',
+  fontFamily = '"JetBrainsMono NF", "FiraCode Nerd Font", monospace',
   fontName = 'NerdFont',
 }) => {
   return (

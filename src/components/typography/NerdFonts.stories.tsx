@@ -46,14 +46,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    fontFamily: '"JetBrainsMono Nerd Font", "FiraCode Nerd Font", "Hack Nerd Font", monospace',
+    fontFamily: '"JetBrainsMono NF", "FiraCode Nerd Font", "Hack Nerd Font", monospace',
     fontName: 'NerdFont (Generic)',
   },
 };
 
 export const JetBrainsMonoNerdFont: Story = {
   args: {
-    fontFamily: '"JetBrainsMono Nerd Font", monospace',
+    fontFamily: '"JetBrainsMono NF", monospace',
     fontName: 'JetBrainsMono Nerd Font',
   },
 };
@@ -74,28 +74,28 @@ export const HackNerdFont: Story = {
 
 export const CaskaydiaCoveNerdFont: Story = {
   args: {
-    fontFamily: '"CaskaydiaCove Nerd Font", monospace',
+    fontFamily: '"CaskaydiaCove NF", monospace',
     fontName: 'CaskaydiaCove Nerd Font (Cascadia Code)',
   },
 };
 
 export const MesloNerdFont: Story = {
   args: {
-    fontFamily: '"MesloLGS Nerd Font", "Meslo Nerd Font", monospace',
+    fontFamily: '"MesloLGS Nerd Font", monospace',
     fontName: 'Meslo Nerd Font',
   },
 };
 
 export const SourceCodeProNerdFont: Story = {
   args: {
-    fontFamily: '"SauceCodePro Nerd Font", monospace',
+    fontFamily: '"SauceCodePro NF", monospace',
     fontName: 'SourceCodePro Nerd Font (SauceCodePro)',
   },
 };
 
 export const IosevkaNerdFont: Story = {
   args: {
-    fontFamily: '"Iosevka Nerd Font", monospace',
+    fontFamily: '"Iosevka NF", monospace',
     fontName: 'Iosevka Nerd Font',
   },
 };
@@ -123,7 +123,7 @@ export const RobotoMonoNerdFont: Story = {
 
 export const VictorMonoNerdFont: Story = {
   args: {
-    fontFamily: '"VictorMono Nerd Font", monospace',
+    fontFamily: '"VictorMono NF", monospace',
     fontName: 'VictorMono Nerd Font',
   },
 };
