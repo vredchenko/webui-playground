@@ -1,3 +1,20 @@
+/* Import dyslexic-friendly fonts */
+
+/* OpenDyslexic from CDN */
+@import url('https://cdn.jsdelivr.net/npm/open-dyslexic@1/open-dyslexic-regular.css');
+
+/* Open Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Atkinson Hyperlegible from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Lexie Readable - using a web-safe fallback chain since it's not widely available */
+/* The font stack will fall back to Comic Sans or cursive if Lexie Readable isn't installed */
+
+/* Note: Arial, Verdana, Tahoma, Comic Sans, Century Gothic, Trebuchet MS are system fonts */
+/* They don't need to be loaded as they're pre-installed on most operating systems */
+
 .dyslexic-fonts {
   padding: 2rem;
   max-width: 900px;
