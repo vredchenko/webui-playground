@@ -1,0 +1,534 @@
+/* Ukrainian Fonts Collection - @font-face declarations */
+
+/* Arsenal - by Andriy Shevchenko (Google Fonts, OFL) */
+@font-face {
+  font-family: 'Arsenal';
+  src: url('/fonts/ukrainian/arsenal/arsenal-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arsenal';
+  src: url('/fonts/ukrainian/arsenal/arsenal-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arsenal';
+  src: url('/fonts/ukrainian/arsenal/arsenal-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arsenal';
+  src: url('/fonts/ukrainian/arsenal/arsenal-bold-italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Fixel Display - by MacPaw (OFL) */
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fixel Display Italics */
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Display';
+  src: url('/fonts/ukrainian/fixel/FixelDisplay/FixelDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Fixel Text - by MacPaw (OFL) */
+@font-face {
+  font-family: 'Fixel Text';
+  src: url('/fonts/ukrainian/fixel/FixelText/FixelText-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Text';
+  src: url('/fonts/ukrainian/fixel/FixelText/FixelText-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Text';
+  src: url('/fonts/ukrainian/fixel/FixelText/FixelText-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fixel Text';
+  src: url('/fonts/ukrainian/fixel/FixelText/FixelText-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mariupol - by Andriy Shevchenko (Free) */
+@font-face {
+  font-family: 'Mariupol';
+  src: url('/fonts/ukrainian/mariupol/OTF/Mariupol-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mariupol';
+  src: url('/fonts/ukrainian/mariupol/OTF/Mariupol-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mariupol';
+  src: url('/fonts/ukrainian/mariupol/OTF/Mariupol-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Kyiv Machine - by Lukas Krakora (Freeware) */
+@font-face {
+  font-family: 'Kyiv Machine';
+  src: url('/fonts/ukrainian/kyiv-machine/KyivMachine-nR0aM.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Kremlin Minister - by Bolt Cutter Design (GPL) */
+@font-face {
+  font-family: 'Kremlin Minister';
+  src: url('/fonts/ukrainian/kremlin/KremlinMinister-aAp9.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kremlin Minister';
+  src: url('/fonts/ukrainian/kremlin/KremlinMinisterBold-ZGJK.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kremlin Minister';
+  src: url('/fonts/ukrainian/kremlin/KremlinMinisterBlack-EGJl.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Quantum Ukraine - by BROTHERSZZZ (Freeware) */
+@font-face {
+  font-family: 'Quantum Ukraine';
+  src: url('/fonts/ukrainian/quantum-ukraine/QuantumUkraineLemonNormal-0Wy5P.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* STOR - by BROTHERSZZZ (Freeware) */
+@font-face {
+  font-family: 'STOR';
+  src: url('/fonts/ukrainian/stor/Stor-RpxYW.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bebas Neue Cyrillic (Free) */
+@font-face {
+  font-family: 'Bebas Neue Cyrillic';
+  src: url('/fonts/ukrainian/bebas-neue-cyrillic/BebasNeueCyrillic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ancient Kyiv (Free) */
+@font-face {
+  font-family: 'Ancient Kyiv';
+  src: url('/fonts/ukrainian/ancient-kyiv/AncientKyiv.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ArtScript (Free) */
+@font-face {
+  font-family: 'ArtScript';
+  src: url('/fonts/ukrainian/artscript/ArtScript.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Yakutovych (Free) */
+@font-face {
+  font-family: 'Yakutovych';
+  src: url('/fonts/ukrainian/yakutovych/Yakutovych.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Abetka Kirnarskoho (Free) */
+@font-face {
+  font-family: 'Abetka Kirnarskoho';
+  src: url('/fonts/ukrainian/abetka-kirnarskoho/AbetkaKirnarskoho.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Component Styles */
+
+.ukrainian-fonts {
+  padding: 2rem;
+  max-width: 900px;
+}
+
+.ukrainian-fonts__header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #ffd700;
+}
+
+.ukrainian-fonts__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+  color: #0057b8;
+}
+
+.ukrainian-fonts__description {
+  font-size: 1.125rem;
+  color: #555;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+.ukrainian-fonts__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ukrainian-fonts__designer {
+  font-size: 0.875rem;
+  color: #666;
+  font-style: italic;
+}
+
+.ukrainian-fonts__badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ukrainian-fonts__badge--license {
+  background: #0057b8;
+  color: white;
+}
+
+.ukrainian-fonts__badge--category {
+  background: #ffd700;
+  color: #333;
+}
+
+.ukrainian-fonts__link {
+  font-size: 0.875rem;
+  color: #0057b8;
+  text-decoration: none;
+}
+
+.ukrainian-fonts__link:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.ukrainian-fonts__section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.ukrainian-fonts__section:last-child {
+  border-bottom: none;
+}
+
+.ukrainian-fonts__section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.ukrainian-fonts__info {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+}
+
+/* Sample Text */
+.ukrainian-fonts__sample {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.ukrainian-fonts__text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+}
+
+.ukrainian-fonts__text:last-child {
+  margin-bottom: 0;
+}
+
+.ukrainian-fonts__text--large {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Character Set */
+.ukrainian-fonts__charset {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.ukrainian-fonts__charset-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.ukrainian-fonts__charset-row:last-child {
+  margin-bottom: 0;
+}
+
+.ukrainian-fonts__charset-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.ukrainian-fonts__charset-chars {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  word-break: break-all;
+}
+
+/* Unique Characters */
+.ukrainian-fonts__unique-chars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.ukrainian-fonts__unique-char {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #0057b8 0%, #0057b8 50%, #ffd700 50%, #ffd700 100%);
+  border-radius: 8px;
+}
+
+.ukrainian-fonts__unique-char-display {
+  font-size: 2.5rem;
+  font-weight: 500;
+  min-width: 80px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ukrainian-fonts__unique-char-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ukrainian-fonts__unique-char-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.ukrainian-fonts__unique-char-desc {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Font Weights */
+.ukrainian-fonts__weights {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ukrainian-fonts__weight {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+
+.ukrainian-fonts__weight-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  min-width: 60px;
+  color: #666;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.ukrainian-fonts__weight-sample {
+  font-size: 1.25rem;
+}
+
+/* Comparison */
+.ukrainian-fonts__comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.ukrainian-fonts__comparison-item {
+  padding: 1.5rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.ukrainian-fonts__comparison-item--highlight {
+  background: linear-gradient(135deg, rgba(0, 87, 184, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+  border: 2px solid #0057b8;
+}
+
+.ukrainian-fonts__comparison-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #555;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.ukrainian-fonts__comparison-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+}
