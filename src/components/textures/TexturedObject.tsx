@@ -34,7 +34,7 @@ function TexturedMesh({ texturePath, objectType, rotate }: SceneProps) {
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
   texture.repeat.set(objectType === 'plane' ? 4 : 2, objectType === 'plane' ? 4 : 2);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     if (meshRef.current && rotate) {
       meshRef.current.rotation.y += delta * 0.5;
       meshRef.current.rotation.x += delta * 0.2;
