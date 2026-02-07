@@ -40,7 +40,7 @@ function IconSection({
           <div key={filename} className="streamline-icon-grid__item">
             <img
               className="streamline-icon-grid__icon"
-              src={`/icons/streamline/${style}/${categoryPath}/${filename}`}
+              src={`${import.meta.env.BASE_URL}icons/streamline/${style}/${categoryPath}/${filename}`}
               alt={humanizeName(filename)}
               loading="lazy"
             />
