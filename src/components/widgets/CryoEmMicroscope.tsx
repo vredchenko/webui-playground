@@ -34,14 +34,12 @@ export const CryoEmMicroscope: React.FC<CryoEmMicroscopeProps> = ({
       setPanic(intensity);
       setMouseNear(dist < nearThreshold);
 
-      // Eyes track cursor relative to microscope center
       const angle = Math.atan2(dy, dx);
       setMousePos({
         x: Math.cos(angle) * 4,
         y: Math.sin(angle) * 4,
       });
 
-      // Flee away from cursor
       const fleeStrength = Math.max(0, 1 - dist / nearThreshold) * 60;
       setFlee({
         x: -Math.cos(angle) * fleeStrength,
@@ -72,35 +70,75 @@ export const CryoEmMicroscope: React.FC<CryoEmMicroscopeProps> = ({
           transition: mouseNear ? 'transform 0.15s ease-out' : 'transform 0.6s ease-out',
         }}
       >
-        {/* The microscope body */}
+        {/* The microscope body — tall boxy Krios monolith */}
         <div className="cryo-body">
-          {/* Gun / top cap */}
-          <div className="cryo-gun" />
+          {/* Upper section: lighter silver with chamfered top */}
+          <div className="cryo-upper">
+            <div className="cryo-chamfer" />
+            <div className="cryo-upper-panel">
+              <div className="cryo-logo">THERMO</div>
+            </div>
+          </div>
 
-          {/* Upper column */}
-          <div className="cryo-column-upper" />
+          {/* Seam line between sections */}
+          <div className="cryo-seam" />
 
-          {/* Eyes - appear on the column area */}
+          {/* Lower section: darker charcoal */}
+          <div className="cryo-lower">
+            <div className="cryo-lower-inset" />
+            <div className="cryo-lower-detail" />
+          </div>
+
+          {/* Face — overlaid on upper panel */}
           <div className="cryo-face">
-            <div className="cryo-eye cryo-eye--left">
-              <div
-                className="cryo-pupil"
-                style={{
-                  transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
-                }}
-              />
-            </div>
-            <div className="cryo-eye cryo-eye--right">
-              <div
-                className="cryo-pupil"
-                style={{
-                  transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
-                }}
-              />
+            {/* Eyebrows — worried angle */}
+            <div className="cryo-brow cryo-brow--left" />
+            <div className="cryo-brow cryo-brow--right" />
+
+            <div className="cryo-eyes-row">
+              <div className="cryo-eye cryo-eye--left">
+                <div
+                  className="cryo-pupil"
+                  style={{
+                    transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+                  }}
+                />
+              </div>
+              <div className="cryo-eye cryo-eye--right">
+                <div
+                  className="cryo-pupil"
+                  style={{
+                    transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
+                  }}
+                />
+              </div>
             </div>
 
-            {/* Worried mouth */}
-            <div className="cryo-mouth" />
+            {/* Terrified mouth — wobbly oval, NOT a smile */}
+            <div className="cryo-mouth">
+              <svg viewBox="0 0 30 16" className="cryo-mouth-svg">
+                {/* Nervous: wavy worried line */}
+                <path
+                  className="cryo-mouth-nervous"
+                  d="M4,10 Q8,4 12,10 Q16,16 20,10 Q24,4 26,8"
+                  fill="none"
+                  stroke="#555"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                {/* Terrified: open gasp */}
+                <ellipse
+                  className="cryo-mouth-terrified"
+                  cx="15"
+                  cy="9"
+                  rx="7"
+                  ry="6"
+                  fill="#444"
+                  stroke="#333"
+                  strokeWidth="1.5"
+                />
+              </svg>
+            </div>
 
             {/* Sweat drops */}
             {sweatVisible && (
@@ -110,21 +148,9 @@ export const CryoEmMicroscope: React.FC<CryoEmMicroscopeProps> = ({
               </>
             )}
           </div>
-
-          {/* Stage / middle bulge */}
-          <div className="cryo-stage" />
-
-          {/* Lower column */}
-          <div className="cryo-column-lower" />
-
-          {/* Base cabinet */}
-          <div className="cryo-base">
-            <div className="cryo-base-panel" />
-            <div className="cryo-base-vent" />
-          </div>
         </div>
 
-        {/* Feet - grow when scared */}
+        {/* Feet — sprout from bottom when scared */}
         <div className="cryo-feet">
           <div className="cryo-foot cryo-foot--left">
             <div className="cryo-shoe" />
@@ -137,10 +163,13 @@ export const CryoEmMicroscope: React.FC<CryoEmMicroscopeProps> = ({
         <div className="cryo-label">{label}</div>
       </div>
 
-      <div className="cryo-shadow" style={{
-        transform: `translateX(${flee.x * 0.5}px) scaleX(${1 - panic * 0.15})`,
-        opacity: 0.18 + panic * 0.07,
-      }} />
+      <div
+        className="cryo-shadow"
+        style={{
+          transform: `translateX(${flee.x * 0.5}px) scaleX(${1 - panic * 0.15})`,
+          opacity: 0.18 + panic * 0.07,
+        }}
+      />
     </div>
   );
 };
