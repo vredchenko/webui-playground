@@ -189,6 +189,8 @@
   pointer-events: none;
 }
 
+/* Show face when explicitly visible or via reactive states */
+.cryo-face--visible,
 .cryo--alert .cryo-face,
 .cryo--nervous .cryo-face,
 .cryo--terrified .cryo-face {
@@ -309,13 +311,13 @@
   height: 100%;
 }
 
-/* Hide both paths by default, reveal per state */
-.cryo-mouth-nervous {
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.cryo-mouth-terrified {
+/* Hide all mouth variants by default */
+.cryo-mouth-nervous,
+.cryo-mouth-terrified,
+.cryo-mouth-happy,
+.cryo-mouth-sleepy,
+.cryo-mouth-curious,
+.cryo-mouth-angry {
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -478,4 +480,567 @@
 .cryo--nervous .cryo-label,
 .cryo--terrified .cryo-label {
   opacity: 0;
+}
+
+/* ══════════════════════════════════════
+   MOOD: SLEEPY
+   ══════════════════════════════════════ */
+.cryo--sleepy .cryo-face {
+  opacity: 1;
+}
+
+/* Half-shut droopy eyes */
+.cryo-eye--sleepy {
+  width: 20px;
+  height: 10px;
+  border-radius: 10px / 6px;
+  background: white;
+  border: 2px solid #888;
+}
+
+.cryo-eye--sleepy .cryo-pupil {
+  width: 7px;
+  height: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  top: 60%;
+}
+
+.cryo--sleepy .cryo-mouth {
+  opacity: 1;
+}
+
+.cryo--sleepy .cryo-mouth-sleepy {
+  opacity: 1;
+}
+
+/* Gentle breathing bob */
+.cryo--sleepy .cryo-body {
+  animation: sleepyBreathe 3s ease-in-out infinite;
+}
+
+@keyframes sleepyBreathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}
+
+/* Sleepy brows: droopy */
+.cryo--sleepy .cryo-brow {
+  opacity: 0.7;
+  top: 6px;
+}
+
+.cryo--sleepy .cryo-brow--left {
+  transform: rotate(-8deg);
+}
+
+.cryo--sleepy .cryo-brow--right {
+  transform: rotate(8deg);
+}
+
+/* Floating Zzz */
+.cryo-zzz {
+  position: absolute;
+  top: -16px;
+  right: -20px;
+}
+
+.cryo-z {
+  position: absolute;
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #8899aa;
+  opacity: 0;
+  animation: zFloat 3s ease-in-out infinite;
+}
+
+.cryo-z--1 {
+  font-size: 11px;
+  right: 0;
+  top: 0;
+  animation-delay: 0s;
+}
+
+.cryo-z--2 {
+  font-size: 15px;
+  right: -10px;
+  top: -8px;
+  animation-delay: 1s;
+}
+
+.cryo-z--3 {
+  font-size: 10px;
+  right: -18px;
+  top: -18px;
+  animation-delay: 2s;
+}
+
+@keyframes zFloat {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(-5deg);
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(8px, -24px) rotate(10deg);
+  }
+}
+
+/* Sleepy LED changes to amber */
+.cryo--sleepy .cryo-lower-inset::after {
+  background: #c90;
+  box-shadow: 0 0 4px #c90;
+  animation: ledPulse 2s ease-in-out infinite;
+}
+
+@keyframes ledPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ══════════════════════════════════════
+   MOOD: CURIOUS
+   ══════════════════════════════════════ */
+.cryo--curious .cryo-face {
+  opacity: 1;
+}
+
+/* One brow raised, one neutral */
+.cryo--curious .cryo-brow {
+  opacity: 1;
+}
+
+.cryo--curious .cryo-brow--left {
+  transform: rotate(-15deg) translateY(-4px);
+}
+
+.cryo--curious .cryo-brow--right {
+  transform: rotate(0deg);
+}
+
+/* Slightly larger curious eyes, one bigger than the other */
+.cryo--curious .cryo-eye--left {
+  width: 24px;
+  height: 24px;
+}
+
+.cryo--curious .cryo-eye--right {
+  width: 20px;
+  height: 20px;
+}
+
+/* Dilated pupils */
+.cryo--curious .cryo-pupil {
+  width: 11px;
+  height: 11px;
+  margin: -5.5px 0 0 -5.5px;
+}
+
+.cryo--curious .cryo-mouth {
+  opacity: 1;
+}
+
+.cryo--curious .cryo-mouth-curious {
+  opacity: 1;
+}
+
+/* Gentle tilt toward cursor */
+.cryo--curious .cryo-body {
+  transition: transform 0.3s ease-out;
+}
+
+/* Feet visible but still, slightly toed-in */
+.cryo--curious .cryo-foot {
+  transform: scaleY(1);
+}
+
+.cryo--curious .cryo-foot--left {
+  transform: scaleY(1) rotate(4deg);
+}
+
+.cryo--curious .cryo-foot--right {
+  transform: scaleY(1) rotate(-4deg);
+}
+
+/* LED turns blue for curious scanning */
+.cryo--curious .cryo-lower-inset::after {
+  background: #48f;
+  box-shadow: 0 0 6px #48f;
+  animation: ledScan 1.5s ease-in-out infinite;
+}
+
+@keyframes ledScan {
+  0%, 100% { opacity: 1; box-shadow: 0 0 4px #48f; }
+  50% { opacity: 0.6; box-shadow: 0 0 10px #48f; }
+}
+
+/* ══════════════════════════════════════
+   MOOD: HAPPY
+   ══════════════════════════════════════ */
+.cryo--happy .cryo-face {
+  opacity: 1;
+}
+
+/* ^_^ closed arc eyes */
+.cryo-eye-happy {
+  width: 22px;
+  height: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cryo-eye-arc {
+  width: 100%;
+  height: 100%;
+}
+
+/* No brows for happy — face is just cheerful */
+.cryo--happy .cryo-brow {
+  opacity: 0;
+}
+
+.cryo--happy .cryo-mouth {
+  opacity: 1;
+}
+
+.cryo--happy .cryo-mouth-happy {
+  opacity: 1;
+}
+
+/* Blush cheeks */
+.cryo-blush {
+  position: absolute;
+  width: 14px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 130, 130, 0.4);
+  top: 38px;
+}
+
+.cryo-blush--left {
+  left: 2px;
+}
+
+.cryo-blush--right {
+  right: 2px;
+}
+
+/* Happy bounce */
+.cryo--happy .cryo-body {
+  animation: happyBounce 0.8s ease-in-out infinite;
+}
+
+@keyframes happyBounce {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-6px); }
+  60% { transform: translateY(-2px); }
+}
+
+/* Happy feet: visible and tapping */
+.cryo--happy .cryo-foot {
+  transform: scaleY(1);
+}
+
+.cryo--happy .cryo-foot--left {
+  animation: happyTapLeft 0.8s ease-in-out infinite;
+}
+
+.cryo--happy .cryo-foot--right {
+  animation: happyTapRight 0.8s ease-in-out infinite;
+}
+
+@keyframes happyTapLeft {
+  0%, 100% { transform: scaleY(1) rotate(0deg); }
+  30% { transform: scaleY(1) rotate(-8deg) translateY(-2px); }
+}
+
+@keyframes happyTapRight {
+  0%, 100% { transform: scaleY(1) rotate(0deg); }
+  50% { transform: scaleY(1) rotate(8deg) translateY(-2px); }
+}
+
+/* LED is bright green and pulsing */
+.cryo--happy .cryo-lower-inset::after {
+  background: #4d4;
+  box-shadow: 0 0 8px #4d4;
+}
+
+/* ══════════════════════════════════════
+   MOOD: ANGRY
+   ══════════════════════════════════════ */
+.cryo--angry .cryo-face {
+  opacity: 1;
+}
+
+/* Sharp V-shaped angry brows */
+.cryo--angry .cryo-brow {
+  opacity: 1;
+  height: 4px;
+  background: #333;
+  top: 6px;
+}
+
+.cryo--angry .cryo-brow--left {
+  transform: rotate(-18deg) translateY(2px);
+}
+
+.cryo--angry .cryo-brow--right {
+  transform: rotate(18deg) translateY(2px);
+}
+
+/* Narrowed angry eyes */
+.cryo-eye--angry {
+  width: 22px;
+  height: 14px;
+  border-radius: 12px / 8px;
+  border-color: #333;
+  border-width: 2.5px;
+  background: white;
+  border: 2px solid #333;
+  position: relative;
+  overflow: hidden;
+}
+
+.cryo-eye--angry .cryo-pupil {
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: #111;
+}
+
+.cryo--angry .cryo-mouth {
+  opacity: 1;
+}
+
+.cryo--angry .cryo-mouth-angry {
+  opacity: 1;
+}
+
+/* Intense shaking */
+.cryo--angry .cryo-body {
+  animation: angryShake 0.05s ease-in-out infinite alternate;
+}
+
+@keyframes angryShake {
+  0% { transform: translateX(-2px) rotate(-0.7deg); }
+  100% { transform: translateX(2px) rotate(0.7deg); }
+}
+
+/* Stomping feet */
+.cryo--angry .cryo-foot {
+  transform: scaleY(1);
+}
+
+.cryo--angry .cryo-foot--left {
+  animation: stompLeft 0.4s ease-in-out infinite;
+}
+
+.cryo--angry .cryo-foot--right {
+  animation: stompRight 0.4s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+@keyframes stompLeft {
+  0%, 60%, 100% { transform: scaleY(1) translateY(0); }
+  30% { transform: scaleY(1) translateY(-6px); }
+}
+
+@keyframes stompRight {
+  0%, 60%, 100% { transform: scaleY(1) translateY(0); }
+  30% { transform: scaleY(1) translateY(-6px); }
+}
+
+/* Steam puffs */
+.cryo-steam {
+  position: absolute;
+  font-size: 14px;
+  top: -8px;
+}
+
+.cryo-steam--left {
+  left: -10px;
+  animation: steamPuff 1.2s ease-out infinite;
+}
+
+.cryo-steam--right {
+  right: -10px;
+  animation: steamPuff 1.2s ease-out infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes steamPuff {
+  0% {
+    opacity: 0.8;
+    transform: translateY(0) scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-18px) scale(1.3);
+  }
+}
+
+/* Angry red tint on upper panel */
+.cryo--angry .cryo-upper-panel {
+  background: linear-gradient(
+    90deg,
+    #b8a0a0 0%,
+    #d4b8b8 20%,
+    #dcc4c4 50%,
+    #d4b8b8 80%,
+    #b8a0a0 100%
+  );
+}
+
+/* LED turns red */
+.cryo--angry .cryo-lower-inset::after {
+  background: #e44;
+  box-shadow: 0 0 6px #e44;
+}
+
+/* ══════════════════════════════════════
+   MOOD: LOVE
+   ══════════════════════════════════════ */
+.cryo--love .cryo-face {
+  opacity: 1;
+}
+
+/* No brows for love — dreamy */
+.cryo--love .cryo-brow {
+  opacity: 0;
+}
+
+/* Heart-eyed */
+.cryo-eye--love {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #e88;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cryo-heart-pupil {
+  font-size: 16px;
+  color: #e55;
+  line-height: 1;
+  animation: heartBeat 0.8s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  30% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  70% { transform: scale(1.1); }
+}
+
+.cryo--love .cryo-mouth {
+  opacity: 1;
+}
+
+.cryo--love .cryo-mouth-happy {
+  opacity: 1;
+}
+
+/* Gentle dreamy sway */
+.cryo--love .cryo-body {
+  animation: loveSway 2s ease-in-out infinite;
+}
+
+@keyframes loveSway {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  75% { transform: rotate(-2deg); }
+}
+
+/* Feet visible, slightly pigeon-toed */
+.cryo--love .cryo-foot {
+  transform: scaleY(1);
+}
+
+.cryo--love .cryo-foot--left {
+  transform: scaleY(1) rotate(6deg);
+}
+
+.cryo--love .cryo-foot--right {
+  transform: scaleY(1) rotate(-6deg);
+}
+
+/* Floating hearts */
+.cryo-hearts {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 40px;
+  pointer-events: none;
+}
+
+.cryo-float-heart {
+  position: absolute;
+  color: #e66;
+  opacity: 0;
+  animation: heartFloat 2.5s ease-out infinite;
+}
+
+.cryo-float-heart--1 {
+  font-size: 12px;
+  left: 10px;
+  animation-delay: 0s;
+}
+
+.cryo-float-heart--2 {
+  font-size: 16px;
+  left: 28px;
+  animation-delay: 0.8s;
+}
+
+.cryo-float-heart--3 {
+  font-size: 10px;
+  left: 44px;
+  animation-delay: 1.6s;
+}
+
+@keyframes heartFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  15% {
+    opacity: 0.9;
+    transform: translateY(-8px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-45px) scale(0.6) rotate(15deg);
+  }
+}
+
+/* LED turns pink */
+.cryo--love .cryo-lower-inset::after {
+  background: #f6a;
+  box-shadow: 0 0 6px #f6a;
+  animation: heartBeat 0.8s ease-in-out infinite;
+}
+
+/* Slight pink tint */
+.cryo--love .cryo-upper-panel {
+  background: linear-gradient(
+    90deg,
+    #b0a8b6 0%,
+    #d0c8d6 20%,
+    #d8d0de 50%,
+    #d0c8d6 80%,
+    #b0a8b6 100%
+  );
 }
