@@ -15,8 +15,26 @@ const config: StorybookConfig = {
     options: {}
   },
   viteFinal: async (config) => {
-    // Set base for GitHub Pages deployment
-    config.base = process.env.NODE_ENV === 'production' ? '/webui-playground/' : '/';
+    // Use relative paths so assets resolve correctly on GitHub Pages subpath deployments.
+    config.base = './';
+
+    // Storybook's mocker plugin injects vite-inject-mocker-entry.js with an absolute
+    // root path that ignores Vite's base config, causing a 404 on subpath deployments.
+    // This plugin rewrites it to a relative path after all other HTML transforms.
+    config.plugins = config.plugins || [];
+    config.plugins.push({
+      name: 'fix-storybook-mocker-base-path',
+      transformIndexHtml: {
+        order: 'post',
+        handler(html: string) {
+          return html.replace(
+            'src="/vite-inject-mocker-entry.js"',
+            'src="./vite-inject-mocker-entry.js"',
+          );
+        },
+      },
+    });
+
     return config;
   }
 };
